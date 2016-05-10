@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online Drawing Stystem</title>
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<ul>
+				<li><a href="#">注册</a></li>
+				<li><a href="#">登陆</a></li>
+			</ul>
+		</div>
+		<div class="mainbody" id="ss">
+			<div class="tools">
+				<ul id="my_tools" class="my_tools clear">
+					<li >
+						<a href="###">
+							<img src="images/11278_05.png"></a>
+					</li>
+					<!-- 线 -->
+					<li class="sMenu">
+						<a href="###">
+							<img src="images/Line_1.png"></a>
+						<ul id = "secondaryMenu_1" class="second_menu clear">
+							<li><a href="###">
+							    <img src="images/Line_1.png"></a></li>
+							<li><a href="###">
+							    <img src="images/Line_2.png"></a></li>
+							<li><a href="###">
+							    <img src="images/Line_3.png"></a></li>
+						</ul> 
+					</li>
+					<!-- 图形 -->
+					<li class="sMenu">
+						<a href="###">
+							<img src="images/graphical_1.png"></a>
+						<ul id = "secondaryMenu_2" class = "second_menu clear">
+							<li><a href="###">
+								<img src="images/graphical_1.png"></a></li>
+							<li><a href="###">
+								<img src="images/graphical_2.png"></a></li>
+							<li><a href="###">
+								<img src="images/graphical_3.png"></a></li>
+						</ul>
+					</li>
+					<!-- 文字 -->
+					<li class="sMenu">
+						<a href="###" onclick="texting()">
+							<img src="images/Text_2.png"></a>
+						<ul id = "secondaryMenu_3" class = "second_menu clear">
+							<li><a href="###">
+								<img src="images/Text_1.png"></a></li>
+							<li><a href="###">
+								<img src="images/Text_2.png"></a></li>
+							<li><a href="###">
+								<img src="images/Text_3.png"></a></li>
+						</ul>
+					</li>
+					<!-- 颜色 -->
+					<li class="sMenu">
+						<a href="###"><img src="images/color_6.png"></a>
+						<ul id = "secondaryMenu_4" class = "second_menu clear">
+							<li><a href="###">
+								<img src="images/color_1.png"></a></li>
+							<li><a href="###">
+								<img src="images/color_2.png"></a></li>
+							<li><a href="###">
+								<img src="images/color_3.png"></a></li>
+							<li><a href="###">
+								<img src="images/color_4.png"></a></li>
+							<li><a href="###">
+								<img src="images/color_5.png"></a></li>
+							<li><a href="###">
+								<img src="images/color_6.png"></a></li>
+						</ul>
+					</li>
+					<!-- 橡皮 -->
+					<li class="sMenu">
+						<a href="###">
+							<img src="images/11278_23.png"></a>
+						<ul id = "secondaryMenu_5" class="second_menu clear">
+							<li><a href="###">
+								<img src="images/eraser_1.png"></a></li>
+							<li><a href="###">
+								<img src="images/eraser_2.png"></a></li>
+							<li><a href="###">
+								<img src="images/eraser_3.png"></a></li>
+						</ul>
+					</li>
+					<!-- 放大镜 -->
+					<li class="sMenu">
+						<a href="###">
+							<img src="images/11278_99.png"></a>
+						<ul id = "secondaryMenu_6" class="second_menu clear">
+							<li><input id="scale-range" type="range" min="0.5" max="3.0" step="0.01" value="1.0"></li>
+						</ul>
+					</li>
+					<!-- 滤镜 -->
+					<li class="sMenu">
+						<a href="###">
+							<img src="images/filter_1.png"></a>
+						<ul id = "secondaryMenu_7" class="second_menu clear">
+							<li><a href="###">
+								<img src="images/filter_1.png"></a></li>
+							<li><a href="###">
+								<img src="images/filter_2.png"></a></li>
+							<li><a href="###">
+								<img src="images/filter_3.png"></a></li>
+							<li><a href="###">
+								<img src="images/filter_4.png"></a></li>
+							<li><a href="###">
+								<img src="images/filter_5.png"></a></li>
+							<li><a href="###">
+								<img src="images/filter_6.png"></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bg_canvas">
+				<canvas id="myCanvas" width="1210" height="500";>您的浏览器不支持canvas，请升级浏览器</canvas>
+				<canvas id="myCanvas2" width="1210" height="500";></canvas>
+				<div id ="mouse_div"></div>
+			</div>
+		<div class="push">
+				<button type="button">重置</button>
+				<button type="button">坐标</button>
+		</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/draw.js"></script>
+
+</body>
+</html>
