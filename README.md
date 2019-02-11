@@ -1,2 +1,2 @@
 # Painter-Online
-基于cancas的在线绘图应用 
+基于canvas的在线绘图应用 
